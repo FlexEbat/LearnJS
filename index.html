@@ -41,5 +41,40 @@
 		username = "Tomas"
 		console.log("Юзернейм после изменения: ", username)
 	</script>
+	<script>
+		console.log("----------------------------------------------")
+		// number - представляет числа в JavaScript, которые могут быть целыми или дробными:
+		const x = 3;
+		const y = 3.65;
+		const z = -0.123;
+		console.log(x,y,z)
+		// BigInt - для очень больших чисел
+		let num = 23493248724973223
+		console.log(num)
+		console.log("----------------------------------------------")
+		console.log("MAX and MIN типа BigInt")
+		console.log(Number.MIN_VALUE);   // 5e-324
+		console.log(Number.MAX_VALUE);  // 1.7976931348623157e+308
+		console.log("----------------------------------------------")
+		// Bool - true or false
+		const isAlive = true;
+		const isDead = false;
+		console.log("----------------------------------------------")
+		// String - Строки
+		name = "Kristina"
+		age = 23
+		console.log(name);
+		company = "ООО \"Газмяс\""
+		console.log(company);
+		// Для интерполяции нужно использовать ``, вместо '' и "". Для встраивания переменной внутри другой переменной.
+		name_and_comapy = `Name = ${name}, Age = ${age} года, Company = ${company}`;
+ 		console.log(name_and_comapy);
+		// undefined указывает, что значение не определено или не установлено.
+		let email;
+		console.log(email);
+		mail = "asidnsaldn@mail.ru";
+		mail = undefined;
+		console.log(mail);
+	</script>
 </body>
 </html>
