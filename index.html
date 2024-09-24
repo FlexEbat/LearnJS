@@ -20,6 +20,8 @@
 	</script>
 	<h1></h1>
 	<script>
+		console.log("----------------------------------------------")
+		
 		// Выводим сообщение 
 		
 		document.write("2+5 = ") 
@@ -33,14 +35,21 @@
 			Писька
 			
 			*/
+		console.log("----------------------------------------------")
+
 		</script>
 
     <script>
-        let username = "Tom";           // Определение переменной username
+		console.log("----------------------------------------------")
+        
+		let username = "Tom";           // Определение переменной username
         console.log(username);  // Вывод значения переменной username на консоль
 		username = "Tomas"
 		console.log("Юзернейм после изменения: ", username)
+		console.log("----------------------------------------------")
+
 	</script>
+
 	<script>
 		console.log("----------------------------------------------")
 		// number - представляет числа в JavaScript, которые могут быть целыми или дробными:
@@ -75,6 +84,42 @@
 		mail = "asidnsaldn@mail.ru";
 		mail = undefined;
 		console.log(mail);
+		// object - представляет сложный объект
+		const user = {name: "Tom", age: "12"};
+		console.log(user)
+		// typeof - можно получить тип переменной
+		
+		var name, age;
+		name = "Tom";
+		console.log(typeof name);
+		age = 20;
+		console.log(typeof age);
+		console.log("----------------------------------------------")
+
+
+	</script>
+
+	<script>
+		// Операции сравнения
+		const normSiski = 3;
+		let siski = 3;
+		const proverkaNaSiski = siski == normSiski;
+		console.log(proverkaNaSiski);
+		// Логические операции
+		//console.log(true && true)  && - Если два значение верны - то будет true. Если хоть одно будет неверно - false;
+		var age = 19;
+		var money = 12;
+		var access = age > 18 && money > 1000;
+		console.log(access);
+			//  || - Хотябы одно верно
+		var age2 = 19;
+		var money2 = 200;
+		var access2 = age2 > 16 || money > 500;
+		console.log(access2);
+		// Условные конструкции
+		age = 18;
+		age < 18 && console.log("Вам меньше 18-ти лет. Доступ запрешён.");
+		age >= 18 && console.log(`Вам больше 18-ти лет. Доступ разрешен.`);
 	</script>
 </body>
 </html>
